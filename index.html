@@ -219,12 +219,12 @@
       fill: #f59e0b;
     }
 
-    /* Vertical Rectangular Action Badges */
+    /* Vertical Rectangular Action Badges - iconed royal cards*/
     .action-icon {
-      padding: 4px 2px;
+      padding: 3px 2px;
       border-radius: 6px;
-      background-color: #f59e0b; /* Brown color fill */
-      color: #fff;
+      background-color: #f59e0b; 
+      color: #1e1b4b;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -233,7 +233,7 @@
       font-weight: bold;
       border: 1px solid #fef08a;
       min-width: 20px;
-      min-height: 30px;
+      min-height: 26px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.3);
     }
 
@@ -243,14 +243,14 @@
       fill: currentColor;
     }
 
-    .royal-badge {
+    .royal-badge {           /* numbered royal cards*/
       background-color: #f59e0b;
       color: #1e1b4b;
       border: 1px solid #fef08a;
       min-width: 20px;
-      min-height: 30px;
+      min-height: 26px;
       border-radius: 6px;
-      padding: 4px 2px;
+      padding: 3px 2px;
       font-weight: 800;
       font-size: 0.85rem;
       display: flex;
@@ -304,9 +304,9 @@
       padding: 0 2px 2px 2px;
     }
 
-    .gem-circle {
-      width: 36px;
-      height: 36px;
+    .gem-circle {    
+      width: 36px;    /*changed from 32px */
+      height: 36px;   /*changed from 32px */
       border-radius: 50%;
       border: 2px solid #fff;
       display: flex;
@@ -762,7 +762,7 @@
       if (card.cfTag) {
         var cfDiv = document.createElement('div');
         cfDiv.className = 'cf-tag-badge';
-        cfDiv.innerText = '(' + card.cfTag + ')';
+        cfDiv.innerText = '' + card.cfTag + '';
         topContainer.appendChild(cfDiv);
       }
 
