@@ -594,7 +594,7 @@
     function updateHeaderTitle() {
       const titleElem = document.getElementById('app-header-title');
       if (selectedGameMode === 'counterfeits') {
-        titleElem.innerText = "Splendor Duel with the Counterfeiters expansion Automa";
+        titleElem.innerText = "Splendor Duel + Counterfeiters Automa";
       } else {
         titleElem.innerText = "Splendor Duel Automa";
       }
@@ -757,7 +757,7 @@
       if (card.cfTag) {
         var cfDiv = document.createElement('div');
         cfDiv.className = 'cf-tag-badge';
-        cfDiv.innerText = '[' + card.cfTag + ']';
+        cfDiv.innerText = '(' + card.cfTag + ')';
         topContainer.appendChild(cfDiv);
       }
 
