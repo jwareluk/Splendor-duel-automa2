@@ -746,6 +746,7 @@
           if (iconType === 'extra-turn' || iconType === 'repeat') iconDiv.innerText = '🔄';
           else if (iconType === 'take-gem' || iconType === 'steal') iconDiv.innerText = '🤏';
           else if (iconType === 'vp') iconDiv.innerText = 'VP';
+          else if (iconType === 'gold') iconDiv.innerText = '🟡';  
           else if (iconSVGMap[iconType]) iconDiv.innerHTML = iconSVGMap[iconType];
           else iconDiv.innerText = iconType;
 
