@@ -515,11 +515,11 @@
       { id: 8, code: "SE", topIcons: ["privilege", "#2"], cfTag: "CF2", gemPriority: ["r", "k", "g", "b", "w", "v", "p"], tier1: "@<1, +2", tier2: "5->R / 3->B3", tier3: "2->B1" },
       { id: 9, code: "SW", topIcons: ["vp", "#1"], cfTag: "CF1", gemPriority: ["w", "v", "g", "b", "r", "p", "k"], tier1: "@<1, +2", tier2: "4->R / 3->B4", tier3: "Pri->1, 2->B2" },
       { id: 10, code: "SE", topIcons: ["gold", "#2"], cfTag: "CF2", gemPriority: ["p", "b", "v", "r", "w", "k", "g"], tier1: "@<5, Pri->1, +2", tier2: "3->R / 2->C4", tier3: "3->B3" },
-      { id: 11, code: "NE", topIcons: ["#2", "#1"], cfTag: "CF3", gemPriority: ["v", "k", "r", "w", "p", "g", "b"], tier1: "->(C1) / '@<2, +3", tier2: "@<1, +2", tier3: "Pri->1, 1->C4" },
-      { id: 12, code: "NW", topIcons: ["#4", "#3"], cfTag: "CF3", gemPriority: ["g", "w", "v", "p", "k", "b", "r"], tier1: "->(B1) / '@<2, +2", tier2: "@<2, +2", tier3: "Pri->1, 1->C5" },
+      { id: 11, code: "NE", topIcons: ["#2", "#1"], cfTag: "CF3", gemPriority: ["v", "k", "r", "w", "p", "g", "b"], tier1: "->(C1) / @<2, +3", tier2: "@<1, +2", tier3: "Pri->1, 1->C4" },
+      { id: 12, code: "NW", topIcons: ["#4", "#3"], cfTag: "CF3", gemPriority: ["g", "w", "v", "p", "k", "b", "r"], tier1: "->(B1) / @<2, +2", tier2: "@<2, +2", tier3: "Pri->1, 1->C5" },
       { id: 13, code: "SE", topIcons: ["steal", "#3"], cfTag: "CF1", gemPriority: ["p", "r", "v", "g", "w", "b", "k"], tier1: "4->B2", tier2: "@<3, Pri->1, +2", tier3: "3->R / '@<1, +2" },
       { id: 14, code: "SW", topIcons: ["repeat", "#4"], cfTag: "CF2", gemPriority: ["v", "k", "w", "b", "p", "r", "g"], tier1: "2->C2", tier2: "@<5, +2", tier3: "@<3, Pri->1, +3" },
-      { id: 15, code: "NW", topIcons: ["privilege", "#1"], cfTag: "CF3", gemPriority: ["g", "v", "p", "r", "k", "w", "b"], tier1: "2->C3", tier2: "@<4, +3", tier3: "3->R / '@<2, +2" },
+      { id: 15, code: "NW", topIcons: ["privilege", "#1"], cfTag: "CF3", gemPriority: ["g", "v", "p", "r", "k", "w", "b"], tier1: "2->C3", tier2: "@<4, +3", tier3: "3->R / @<2, +2" },
       { id: 16, code: "NE", topIcons: ["vp", "#2"], cfTag: "CF1", gemPriority: ["b", "k", "w", "v", "g", "p", "r"], tier1: "3->C4", tier2: "@<5, +3", tier3: "@<2, +2" },
       { id: 17, code: "NE", topIcons: ["gold", "#3"], cfTag: "CF1", gemPriority: ["r", "g", "p", "b", "v", "k", "w"], tier1: "3->C5", tier2: "@<5, +2", tier3: "@<1, +2" },
       { id: 18, code: "SW", topIcons: ["vp", "#4"], cfTag: "CF2", gemPriority: ["w", "b", "k", "r", "g", "v", "p"], tier1: "Pri->1, 3->C1", tier2: "@<5, +3", tier3: "Pri->1, 2->B4" }
@@ -744,7 +744,7 @@
           iconDiv.className = 'action-icon ' + iconType;
           
           if (iconType === 'extra-turn' || iconType === 'repeat') iconDiv.innerText = '🔄';
-          else if (iconType === 'take-gem') iconDiv.innerText = '🤏';
+          else if (iconType === 'take-gem' || iconType === 'steal') iconDiv.innerText = '🤏';
           else if (iconType === 'vp') iconDiv.innerText = 'VP';
           else if (iconSVGMap[iconType]) iconDiv.innerHTML = iconSVGMap[iconType];
           else iconDiv.innerText = iconType;
